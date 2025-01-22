@@ -1,0 +1,84 @@
+//Variables for the website
+$bg-color: #F3F3F3;
+$main-color: #000000;
+$secondary-color: #353535;
+@mixin header--shadow($x-axis:0, $y-axis:2px, $blur:4px, $color: rgba(0, 0, 0, 0.25)) {
+    box-shadow: $x-axis $y-axis $blur $color;
+}
+@mixin form--shadow($x-axis:0, $y-axis:4px, $blur:4px, $color: rgba(0, 0, 0, 0.25)) {
+    box-shadow: $x-axis $y-axis $blur $color;
+}
+
+// General Settings
+* {    font-family: "Roboto", sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    margin: unset;
+}
+
+.main-container {
+    width: 100%;
+    box-sizing: border-box;
+
+    @media screen and (min-width: 1224px) {
+        max-width: 1440px;
+    }
+}
+
+//Header Settings
+.header__container {
+    margin: 4px 0;
+    padding-top: 24px;
+    padding-bottom: 10px;
+    @include header--shadow(0, 3px, 4px, rgba(0, 0, 0, 0.25));
+
+    @media screen and (min-width: 1224px) { 
+        padding-bottom: 24px;
+        box-shadow: unset;
+       }
+
+    &__logo {
+        display:block;
+        margin: 0px auto;
+        width: 160px;
+        height: auto;
+    }
+}
+
+
+// Form Settings
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #EAEAEA;
+    padding: 15px 0;
+    &--shadow {
+        @include form--shadow(0, 4px, 4px, rgba(0, 0, 0, 0.25));
+
+        @media screen and (min-width: 1224px) {
+            box-shadow: unset;
+        }
+    }
+    &__container {
+        display: flex;
+        gap: 16px;
+        &__icon {
+            color: $secondary-color;
+            width: 12px;
+        }
+        &__input {
+            border: none;
+            background-color: #EAEAEA !important;
+            color: $secondary-color;
+            width: 109px;
+            &::placeholder {
+                color: $secondary-color !important;
+            }
+        }
+    }
+}    
+
