@@ -1,7 +1,3 @@
-* {
-  font-family: "Roboto", sans-serif;
-}
-
 body {
   display: flex;
   justify-content: center;
@@ -18,24 +14,19 @@ body {
   }
 }
 
-.header__container {
-  padding-top: 24px;
-  padding-bottom: 10px;
-  position: relative;
-  z-index: 1;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+* {
+  font-family: "Roboto", sans-serif;
 }
-@media screen and (min-width: 1224px) {
-  .header__container {
-    padding-bottom: 24px;
-    box-shadow: unset;
-  }
-}
-.header__container__logo {
-  display: block;
-  margin: 0px auto;
-  width: 160px;
-  height: auto;
+
+.button {
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  color: #FFFFFF;
+  padding: 16px 24px;
+  background: linear-gradient(to top, #9356dc 0%, #ff79da 100%);
+  border-radius: 25px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
 }
 
 .form {
@@ -43,7 +34,9 @@ body {
   justify-content: center;
   align-items: center;
   background-color: #EAEAEA;
-  padding: 15px 0;
+  padding: 16px 0;
+  position: relative;
+  z-index: 1;
 }
 .form--shadow {
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
@@ -66,6 +59,7 @@ body {
   background-color: #EAEAEA;
   color: #353535;
   width: 109px;
+  font-size: 16px;
   font-weight: 500;
 }
 .form__container__input::-moz-placeholder {
@@ -73,4 +67,59 @@ body {
 }
 .form__container__input::placeholder {
   color: #353535;
+}
+
+.header__container {
+  padding-top: 20px;
+  padding-bottom: 16px;
+  position: relative;
+  z-index: 2;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+@media screen and (min-width: 1224px) {
+  .header__container {
+    padding-bottom: 24px;
+    box-shadow: unset;
+  }
+}
+.header__container__logo {
+  display: block;
+  margin: 0px auto;
+  width: 48%;
+  height: auto;
+}
+@media screen and (min-width: 1224px) {
+  .header__container__logo {
+    width: 16%;
+  }
+}
+
+.informations {
+  background-color: #F6F6F6;
+  text-align: center;
+}
+.informations__title {
+  margin: unset;
+  padding: 42px 48px 0;
+  font-size: 24px;
+}
+@media screen and (min-width: 1224px) {
+  .informations__title {
+    font-size: 40px;
+    padding-bottom: 16px;
+  }
+}
+.informations__text {
+  font-size: 18px;
+  font-weight: 300;
+  padding: 0 32px;
+}
+.informations__button-container {
+  padding-top: 32px;
+  padding-bottom: 72px;
+}
+@media screen and (min-width: 1224px) {
+  .informations__button-container {
+    padding-bottom: 48px;
+  }
 }/*# sourceMappingURL=main.css.map */

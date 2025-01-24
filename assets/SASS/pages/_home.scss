@@ -1,0 +1,28 @@
+.informations {
+    background-color: $bg-color;
+    text-align: center;
+
+    &__title {
+        margin: unset;
+        padding: 42px 48px 0;
+        font-size: 24px;
+
+        @media screen and (min-width: 1224px) {
+            font-size: 40px;
+            padding-bottom: 16px;
+        }
+    }
+    &__text {
+        font-size: 18px;
+        font-weight: 300;
+        padding: 0 32px;
+    }
+    &__button-container {
+        padding-top: 32px;
+        padding-bottom: 72px;
+
+        @media screen and (min-width: 1224px) {
+            padding-bottom: 48px;
+        }
+    }
+}

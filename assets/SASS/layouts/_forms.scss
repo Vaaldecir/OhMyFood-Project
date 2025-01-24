@@ -3,8 +3,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: $bg-grey;
-    padding: 15px 0;
+    background-color: $bg-form;
+    padding: 16px 0;
+    position: relative;
+    z-index: 1;
     &--shadow {
         box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 
@@ -21,9 +23,10 @@
         }
         &__input {
             border: none;
-            background-color: $bg-grey;
+            background-color: $bg-form;
             color: $secondary-color;
             width: 109px;
+            font-size: 16px;
             font-weight: 500;
             &::placeholder {
                 color: $secondary-color;
