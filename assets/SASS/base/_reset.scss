@@ -1,0 +1,14 @@
+body {
+    display: flex;
+    justify-content: center;
+    margin: unset;
+}
+
+.main-container {
+    width: 100%;
+    box-sizing: border-box;
+
+    @media screen and (min-width: 1224px) {
+        max-width: 1440px;
+    }
+}

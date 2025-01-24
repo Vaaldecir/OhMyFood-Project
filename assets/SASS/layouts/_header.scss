@@ -1,0 +1,20 @@
+//Header Settings
+.header__container {
+    padding-top: 24px;
+    padding-bottom: 10px;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+
+    @media screen and (min-width: 1224px) { 
+        padding-bottom: 24px;
+        box-shadow: unset;
+       }
+
+    &__logo {
+        display:block;
+        margin: 0px auto;
+        width: 160px;
+        height: auto;
+    }
+}

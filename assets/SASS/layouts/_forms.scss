@@ -1,0 +1,33 @@
+// Form Settings
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $bg-grey;
+    padding: 15px 0;
+    &--shadow {
+        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+
+        @media screen and (min-width: 1224px) {
+            box-shadow: unset;
+        }
+    }
+    &__container {
+        display: flex;
+        gap: 16px;
+        &__icon {
+            color: $secondary-color;
+            width: 12px;
+        }
+        &__input {
+            border: none;
+            background-color: $bg-grey;
+            color: $secondary-color;
+            width: 109px;
+            font-weight: 500;
+            &::placeholder {
+                color: $secondary-color;
+            }
+        }
+    }
+}  
