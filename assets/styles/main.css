@@ -1,3 +1,23 @@
+@keyframes button {
+  from {
+    opacity: 1;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  }
+  to {
+    opacity: 0.8;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.35);
+  }
+}
+@keyframes button-reverse {
+  from {
+    opacity: 0.8;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.35);
+  }
+  to {
+    opacity: 1;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  }
+}
 body {
   display: flex;
   justify-content: center;
@@ -27,6 +47,21 @@ body {
   background: linear-gradient(to top, #9356dc 0%, #ff79da 100%);
   border-radius: 25px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  animation: button-reverse 150ms forwards;
+}
+.button:active {
+  animation: button 150ms forwards;
+}
+@media screen and (min-width: 1224px) {
+  .button {
+    animation: button-reverse 500ms forwards;
+  }
+  .button:active {
+    animation: unset;
+  }
+  .button:hover {
+    animation: button 500ms forwards;
+  }
 }
 
 .form {
@@ -87,6 +122,11 @@ body {
   margin: 0px auto;
   width: 48%;
   height: auto;
+}
+@media screen and (min-width: 768px) {
+  .header__container__logo {
+    width: 32%;
+  }
 }
 @media screen and (min-width: 1224px) {
   .header__container__logo {

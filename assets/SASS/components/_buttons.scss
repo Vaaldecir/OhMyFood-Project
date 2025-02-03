@@ -7,4 +7,19 @@
     background: $btn-bg;
     border-radius: 25px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+    animation: button-reverse 150ms forwards;
+    &:active {
+        animation: button 150ms forwards;
+    }
+
+    @media screen and (min-width: 1224px) {
+        animation: button-reverse 500ms forwards;
+        &:active {
+            animation: unset;
+        }
+        &:hover {
+            animation: button 500ms forwards;
+        }
+    }
+ 
 }
