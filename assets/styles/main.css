@@ -34,6 +34,12 @@ body {
   }
 }
 
+.title {
+  margin: unset;
+  padding-bottom: 24px;
+  font-size: 24px;
+}
+
 * {
   font-family: "Roboto", sans-serif;
 }
@@ -162,4 +168,41 @@ body {
   .informations__button-container {
     padding-bottom: 48px;
   }
+}
+
+.fonctionnement {
+  padding: 48px 24px;
+}
+.fonctionnement__btn {
+  margin-left: 13px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  background-color: #F6F6F6;
+  border: 1px solid;
+  border-color: #F6F6F6;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+.fonctionnement__btn__number {
+  position: relative;
+  left: -15px;
+  margin: unset;
+  border: 1px solid #9356dc;
+  border-radius: 16px;
+  padding: 6px 10px;
+  background-color: #9356dc;
+  font-size: 14px;
+  font-weight: 500;
+  color: #FFFFFF;
+}
+.fonctionnement__btn__txt {
+  margin: unset;
+  padding: 24px 0;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.fonctionnement__btn__icone {
+  color: #7e7e7e;
 }/*# sourceMappingURL=main.css.map */
