@@ -29,37 +29,77 @@
 
 .fonctionnement {
     padding: 48px 24px;
+
+    @media screen and (min-width: 1224px) {
+        padding: 50px 144px;
+    }
+
     &__btn {
-        margin-left: 13px;
         display: flex;
-        align-items: center;
+        flex-direction: column;
         gap: 24px;
-        background-color: $bg-color;
-        border: 1px solid;
-        border-color: $bg-color;
-        border-radius: 20px;
-        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
-        &__number {
-            position: relative;
-            left: -15px;
-            margin: unset;
-            border: 1px solid $btn-main-bg;
-            border-radius: 16px;
-            padding: 6px 10px;
-            background-color: $btn-main-bg;
-            font-size: 14px;
-            font-weight: 500;
-            color: $btn-color;
+
+        @media screen and (min-width: 1224px) {
+            flex-direction: row;
+            justify-content: center;
+            gap: 24px;
         }
-        &__txt {
-            margin: unset;
-            padding: 24px 0;
-            font-size: 16px;
-            font-weight: 500;
+
+        &__container {
+            margin-left: 13px;
+            display: flex;
+            align-items: center;
+            gap: 24px;
+            background-color: $bg-color;
+            border: 1px solid;
+            border-color: $bg-color;
+            border-radius: 20px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+
+            @media screen and (min-width: 1224px) {
+                display: flex;
+                width: 30%;
+            }
+
+            &__number {
+                position: relative;
+                left: -15px;
+                margin: unset;
+                border: 1px solid $btn-main-bg;
+                border-radius: 16px;
+                padding: 6px 10px;
+                background-color: $btn-main-bg;
+                font-size: 14px;
+                font-weight: 500;
+                color: $btn-color;
+            }
+
+            &:active > i {
+                color: $btn-main-bg;
+
+                @media screen and (min-width: 1224px) {
+                color: $icone-color;
+                }
+            }
+
+            &:hover > i {
+                @media screen and (min-width: 1224px) {
+                    color: $btn-main-bg;
+                }
+            }
+
+            &__txt {
+                margin: unset;
+                padding: 24px 0;
+                font-size: 16px;
+                font-weight: 500;
+            } 
+
+
         }
     }
 }
 
-.fonctionnement__btn__icone {
+.fonctionnement__btn__container__icone {
     color: $icone-color;
 }

@@ -126,7 +126,7 @@ body {
 .header__container__logo {
   display: block;
   margin: 0px auto;
-  width: 48%;
+  width: 40%;
   height: auto;
 }
 @media screen and (min-width: 768px) {
@@ -173,7 +173,24 @@ body {
 .fonctionnement {
   padding: 48px 24px;
 }
+@media screen and (min-width: 1224px) {
+  .fonctionnement {
+    padding: 50px 144px;
+  }
+}
 .fonctionnement__btn {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+@media screen and (min-width: 1224px) {
+  .fonctionnement__btn {
+    flex-direction: row;
+    justify-content: center;
+    gap: 24px;
+  }
+}
+.fonctionnement__btn__container {
   margin-left: 13px;
   display: flex;
   align-items: center;
@@ -184,7 +201,13 @@ body {
   border-radius: 20px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
 }
-.fonctionnement__btn__number {
+@media screen and (min-width: 1224px) {
+  .fonctionnement__btn__container {
+    display: flex;
+    width: 30%;
+  }
+}
+.fonctionnement__btn__container__number {
   position: relative;
   left: -15px;
   margin: unset;
@@ -196,13 +219,26 @@ body {
   font-weight: 500;
   color: #FFFFFF;
 }
-.fonctionnement__btn__txt {
+.fonctionnement__btn__container:active > i {
+  color: #9356dc;
+}
+@media screen and (min-width: 1224px) {
+  .fonctionnement__btn__container:active > i {
+    color: #7e7e7e;
+  }
+}
+@media screen and (min-width: 1224px) {
+  .fonctionnement__btn__container:hover > i {
+    color: #9356dc;
+  }
+}
+.fonctionnement__btn__container__txt {
   margin: unset;
   padding: 24px 0;
   font-size: 16px;
   font-weight: 500;
 }
 
-.fonctionnement__btn__icone {
+.fonctionnement__btn__container__icone {
   color: #7e7e7e;
 }/*# sourceMappingURL=main.css.map */
