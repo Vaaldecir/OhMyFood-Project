@@ -8,7 +8,7 @@ body {
     width: 100%;
     box-sizing: border-box;
 
-    @media screen and (min-width: 1224px) {
+    @media screen and (min-width: $desktop-breakpoint) {
         max-width: 1440px;
     }
 }

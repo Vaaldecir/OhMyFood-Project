@@ -6,7 +6,7 @@
     z-index: 2;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
 
-    @media screen and (min-width: 1224px) { 
+    @media screen and (min-width: $desktop-breakpoint) { 
         padding-bottom: 24px;
         box-shadow: unset;
        }
@@ -16,10 +16,10 @@
         margin: 0px auto;
         width: 40%;
         height: auto;
-        @media screen and (min-width: 768px) {
+        @media screen and (min-width: $tablet-breakpoint) {
             width: 32%;
         }
-        @media screen and (min-width: 1224px) {
+        @media screen and (min-width: $desktop-breakpoint) {
             width: 16%;
         }
     }

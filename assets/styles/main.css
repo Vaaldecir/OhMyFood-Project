@@ -28,7 +28,7 @@ body {
   width: 100%;
   box-sizing: border-box;
 }
-@media screen and (min-width: 1224px) {
+@media screen and (min-width: 1024px) {
   .main-container {
     max-width: 1440px;
   }
@@ -58,7 +58,7 @@ body {
 .button:active {
   animation: button 150ms forwards;
 }
-@media screen and (min-width: 1224px) {
+@media screen and (min-width: 1024px) {
   .button {
     animation: button-reverse 500ms forwards;
   }
@@ -82,7 +82,7 @@ body {
 .form--shadow {
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
-@media screen and (min-width: 1224px) {
+@media screen and (min-width: 1024px) {
   .form--shadow {
     box-shadow: unset;
   }
@@ -117,7 +117,7 @@ body {
   z-index: 2;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
 }
-@media screen and (min-width: 1224px) {
+@media screen and (min-width: 1024px) {
   .header__container {
     padding-bottom: 24px;
     box-shadow: unset;
@@ -134,7 +134,7 @@ body {
     width: 32%;
   }
 }
-@media screen and (min-width: 1224px) {
+@media screen and (min-width: 1024px) {
   .header__container__logo {
     width: 16%;
   }
@@ -149,7 +149,7 @@ body {
   padding: 42px 48px 0;
   font-size: 24px;
 }
-@media screen and (min-width: 1224px) {
+@media screen and (min-width: 1024px) {
   .informations__title {
     font-size: 40px;
     padding-bottom: 16px;
@@ -164,26 +164,27 @@ body {
   padding-top: 32px;
   padding-bottom: 72px;
 }
-@media screen and (min-width: 1224px) {
+@media screen and (min-width: 1024px) {
   .informations__button-container {
     padding-bottom: 48px;
   }
 }
 
-.fonctionnement {
+.section {
   padding: 48px 24px;
 }
-@media screen and (min-width: 1224px) {
-  .fonctionnement {
+@media screen and (min-width: 1024px) {
+  .section {
     padding: 50px 144px;
   }
 }
+
 .fonctionnement__btn {
   display: flex;
   flex-direction: column;
   gap: 24px;
 }
-@media screen and (min-width: 1224px) {
+@media screen and (min-width: 1024px) {
   .fonctionnement__btn {
     flex-direction: row;
     justify-content: center;
@@ -222,12 +223,12 @@ body {
 .fonctionnement__btn__container:active > i {
   color: #9356dc;
 }
-@media screen and (min-width: 1224px) {
+@media screen and (min-width: 1024px) {
   .fonctionnement__btn__container:active > i {
     color: #7e7e7e;
   }
 }
-@media screen and (min-width: 1224px) {
+@media screen and (min-width: 1024px) {
   .fonctionnement__btn__container:hover > i {
     color: #9356dc;
   }
@@ -241,4 +242,71 @@ body {
 
 .fonctionnement__btn__container__icone {
   color: #7e7e7e;
+}
+
+.restaurant {
+  background-color: #F6F6F6;
+}
+.restaurant__title {
+  margin: unset;
+}
+.restaurant__card__link {
+  text-decoration: none;
+}
+.restaurant__card__link--new {
+  margin: unset;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+  color: #008766;
+  background-color: #99E2D0;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 6px 12px;
+  border-radius: 2px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  position: relative;
+  top: 40px;
+  left: 288px;
+}
+.restaurant__card__link__menu {
+  background-color: #FFFFFF;
+  border-radius: 15px;
+}
+.restaurant__card__link__menu__img {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  width: 100%;
+  height: 176px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.restaurant__card__link__menu__content {
+  display: flex;
+  padding: 8px 16px 16px;
+}
+.restaurant__card__link__menu__content__txt {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  gap: 8px;
+}
+.restaurant__card__link__menu__content__txt__title {
+  margin: unset;
+  color: #000000;
+  font-size: 18px;
+}
+.restaurant__card__link__menu__content__txt__location {
+  margin: unset;
+  color: #000000;
+  font-weight: 300;
+  font-size: 18px;
+}
+.restaurant__card__link__menu__content__icon {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+  color: #000000;
 }/*# sourceMappingURL=main.css.map */
