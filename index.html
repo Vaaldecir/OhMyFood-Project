@@ -57,19 +57,23 @@
              </section>
              <!-- Section des restaurants -->
               <section class="restaurant section">
-                <h1 class="restaurant__title ">Restaurants</h1>
+                <h1 class="restaurant__title title">Restaurants</h1>
                 <div class="restaurant__card">
                     <a href="#" class="restaurant__card__link">
-                        <p class="restaurant__card__link--new">Nouveau</p>
                         <article class="restaurant__card__link__menu">
-                            <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="image d'un plat gastronomique" class="restaurant__card__link__menu__img">
+                            <div class="restaurant__card__link__menu__container">
+                                <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="image d'un plat gastronomique" class="restaurant__card__link__menu__container__img">
+                                <p class="restaurant__card__link__menu__container__new">Nouveau</p>
+                            </div>
                             <div class="restaurant__card__link__menu__content">
                                 <div class="restaurant__card__link__menu__content__txt">
                                     <h2 class="restaurant__card__link__menu__content__txt__title">La palette du goût</h2>
                                     <p class="restaurant__card__link__menu__content__txt__location">Ménilmontant</p>
                                 </div>
                                 <div class="restaurant__card__link__menu__content__icon">
-                                    <i class="fa-regular fa-heart restaurant__card__link__menu__content__icon__heart"></i>
+                                    <button class="restaurant__card__link__menu__content__icon__button" type="button">
+                                        <i class="fa-regular fa-heart restaurant__card__link__menu__content__icon__button__heart button__heart"></i>
+                                    </button>
                                 </div>
                             </div>
                         </article>
