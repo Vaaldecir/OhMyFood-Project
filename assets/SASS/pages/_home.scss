@@ -108,13 +108,14 @@
 .restaurant {
     background-color: $bg-color;
 
-    &__card__link {
-        text-decoration: none;
+    &__card__menu {
+        background-color: $btn-color;
+        border-radius: 15px;
+        position: relative;
 
-        &__menu {
 
-            background-color: $btn-color;
-            border-radius: 15px;
+        &__link {
+            text-decoration: none;
 
             &__container {
                 position: relative;
@@ -150,6 +151,8 @@
             &__content {
                 display: flex;
                 padding: 8px 16px 16px;
+                position: relative;
+
     
                 &__txt {
                     display: flex;
@@ -167,20 +170,6 @@
                         color: $main-color;
                         font-weight: 300;
                         font-size: 18px;
-                    }
-                }
-                &__icon {
-                    width: 20%;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-
-
-                    &__button {
-                        font-size: 22px;
-                        border: none;
-                        background-color: $btn-color;
-                        cursor: pointer;
                     }
                 }
             }

@@ -1,85 +1,120 @@
 <!DOCTYPE html>
 
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <title>Oh My Food - Accueil</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="assets/styles/main.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/431c49bad6.js" crossorigin="anonymous"></script>
-</head>
-    <body>
-        <div class="main-container">
-        <!-- Header -->
-            <header class="header">
-                <div class="header__container header__container--shadow">
-                    <img src="images/logo/ohmyfood.png" alt="Logo Oh My Food" class="header__container__logo">
-                </div>
-            </header>
-            <!-- Formulaire pour localiser les restaurants près de soi-->
-            <div class="form form--shadow">
-                <form method="get" action=" " class="form__container">
-                    <i class="form__container__icon fa-solid fa-location-dot"></i>
-                    <input type="text" name="city" id="city" class="form__container__input" placeholder="Paris, Belleville">   
-                </form>
-            </div>
-            <!-- Section informations -->
-             <section class="informations">
-                <h1 class="informations__title">Réservez le menu qui vous convient</h1>
-                <p class="informations__text">Découvrez des restaurants d’exception, sélectionnés par nos soins.</p>
-                <div class="informations__button-container">
-                    <a href="#" class="informations__button button">Explorer nos restaurants</a>
-             </section>
-             <!-- Section Fonctionnement -->
-             <section class="fonctionnement section">
-                <h1 class="fonctionnement__title title">Fonctionnement</h1>
-                <div class="fonctionnement__btn">
-                    <!-- Boutons d'explications du fonctionnement du site -->
-                    <div class="fonctionnement__btn__container">
-                        <p class="fonctionnement__btn__container__number">1</p>
-                        <i class="fa-solid fa-mobile-screen-button fa-lg fonctionnement__btn__container__icone"></i>
-                        <p class="fonctionnement__btn__container__txt">Choisissez un restaurant</p>
-                    </div>
-                    <div class="fonctionnement__btn__container">
-                        <p class="fonctionnement__btn__container__number">2</p>
-                        <i class="fa-solid fa-list-ul fa-lg fonctionnement__btn__container__icone"></i>
-                        <p class="fonctionnement__btn__container__txt">Composez votre menu</p>
-                    </div>
-                    <div class="fonctionnement__btn__container">
-                        <p class="fonctionnement__btn__container__number">3</p>
-                        <i class="fa-solid fa-store fa-lg fonctionnement__btn__container__icone"></i>
-                        <p class="fonctionnement__btn__container__txt">Dégustez au restaurant</p>
-                    </div>
-                </div>
-             </section>
-             <!-- Section des restaurants -->
-              <section class="restaurant section">
-                <h1 class="restaurant__title title">Restaurants</h1>
-                <div class="restaurant__card">
-                    <a href="#" class="restaurant__card__link">
-                        <article class="restaurant__card__link__menu">
-                            <div class="restaurant__card__link__menu__container">
-                                <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="image d'un plat gastronomique" class="restaurant__card__link__menu__container__img">
-                                <p class="restaurant__card__link__menu__container__new">Nouveau</p>
-                            </div>
-                            <div class="restaurant__card__link__menu__content">
-                                <div class="restaurant__card__link__menu__content__txt">
-                                    <h2 class="restaurant__card__link__menu__content__txt__title">La palette du goût</h2>
-                                    <p class="restaurant__card__link__menu__content__txt__location">Ménilmontant</p>
-                                </div>
-                                <div class="restaurant__card__link__menu__content__icon">
-                                    <button class="restaurant__card__link__menu__content__icon__button" type="button">
-                                        <i class="fa-regular fa-heart restaurant__card__link__menu__content__icon__button__heart button__heart"></i>
-                                    </button>
-                                </div>
-                            </div>
-                        </article>
-                    </a>
-                </div>
-              </section>
-        </div>
-    </body>
+	<head>
+		<meta charset="UTF-8" />
+		<title>Oh My Food - Accueil</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link href="assets/styles/main.css" rel="stylesheet" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+			rel="stylesheet" />
+		<script
+			src="https://kit.fontawesome.com/431c49bad6.js"
+			crossorigin="anonymous"></script>
+	</head>
+	<body>
+		<div class="main-container">
+			<!-- Header -->
+			<header class="header">
+				<div class="header__container header__container--shadow">
+					<img
+						src="images/logo/ohmyfood.png"
+						alt="Logo Oh My Food"
+						class="header__container__logo" />
+				</div>
+			</header>
+			<!-- Formulaire pour localiser les restaurants près de soi-->
+			<div class="form form--shadow">
+				<form method="get" action=" " class="form__container">
+					<i class="form__container__icon fa-solid fa-location-dot"></i>
+					<input
+						type="text"
+						name="city"
+						id="city"
+						class="form__container__input"
+						placeholder="Paris, Belleville" />
+				</form>
+			</div>
+			<!-- Section informations -->
+			<section class="informations">
+				<h1 class="informations__title">Réservez le menu qui vous convient</h1>
+				<p class="informations__text">
+					Découvrez des restaurants d’exception, sélectionnés par nos soins.
+				</p>
+				<div class="informations__button-container">
+					<a href="#" class="informations__button button"
+						>Explorer nos restaurants</a
+					>
+				</div>
+			</section>
+			<!-- Section Fonctionnement -->
+			<section class="fonctionnement section">
+				<h1 class="fonctionnement__title title">Fonctionnement</h1>
+				<div class="fonctionnement__btn">
+					<!-- Boutons d'explications du fonctionnement du site -->
+					<div class="fonctionnement__btn__container">
+						<p class="fonctionnement__btn__container__number">1</p>
+						<i
+							class="fa-solid fa-mobile-screen-button fa-lg fonctionnement__btn__container__icone"></i>
+						<p class="fonctionnement__btn__container__txt">
+							Choisissez un restaurant
+						</p>
+					</div>
+					<div class="fonctionnement__btn__container">
+						<p class="fonctionnement__btn__container__number">2</p>
+						<i
+							class="fa-solid fa-list-ul fa-lg fonctionnement__btn__container__icone"></i>
+						<p class="fonctionnement__btn__container__txt">
+							Composez votre menu
+						</p>
+					</div>
+					<div class="fonctionnement__btn__container">
+						<p class="fonctionnement__btn__container__number">3</p>
+						<i
+							class="fa-solid fa-store fa-lg fonctionnement__btn__container__icone"></i>
+						<p class="fonctionnement__btn__container__txt">
+							Dégustez au restaurant
+						</p>
+					</div>
+				</div>
+			</section>
+			<!-- Section des restaurants -->
+			<section class="restaurant section">
+				<h1 class="restaurant__title title">Restaurants</h1>
+				<div class="restaurant__card">
+					<article class="restaurant__card__menu">
+						<a href="#" class="restaurant__card__menu__link">
+							<div class="restaurant__card__menu__link__container">
+								<img
+									src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+									alt="image d'un plat gastronomique"
+									class="restaurant__card__menu__link__container__img" />
+								<p class="restaurant__card__menu__link__container__new">
+									Nouveau
+								</p>
+							</div>
+							<div class="restaurant__card__menu__link__content">
+								<div class="restaurant__card__menu__link__content__txt">
+									<h2 class="restaurant__card__menu__link__content__txt__title">
+										La palette du goût
+									</h2>
+									<p
+										class="restaurant__card__menu__link__content__txt__location">
+										Ménilmontant
+									</p>
+								</div>
+							</div>
+						</a>
+						<div class="restaurant__card__menu__icon">
+							<i
+								class="fa-regular fa-xl fa-heart restaurant__card__menu__icon__heart"></i>
+						</div>
+					</article>
+				</div>
+			</section>
+		</div>
+	</body>
 </html>

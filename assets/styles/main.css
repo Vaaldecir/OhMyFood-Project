@@ -70,6 +70,16 @@ body {
   }
 }
 
+.restaurant__card__menu__icon {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 16px;
+  bottom: 40px;
+}
+
 .form {
   display: flex;
   justify-content: center;
@@ -247,17 +257,18 @@ body {
 .restaurant {
   background-color: #F6F6F6;
 }
-.restaurant__card__link {
-  text-decoration: none;
-}
-.restaurant__card__link__menu {
+.restaurant__card__menu {
   background-color: #FFFFFF;
   border-radius: 15px;
-}
-.restaurant__card__link__menu__container {
   position: relative;
 }
-.restaurant__card__link__menu__container__img {
+.restaurant__card__menu__link {
+  text-decoration: none;
+}
+.restaurant__card__menu__link__container {
+  position: relative;
+}
+.restaurant__card__menu__link__container__img {
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   width: 100%;
@@ -265,7 +276,7 @@ body {
   -o-object-fit: cover;
      object-fit: cover;
 }
-.restaurant__card__link__menu__container__new {
+.restaurant__card__menu__link__container__new {
   margin: unset;
   text-align: center;
   font-size: 14px;
@@ -281,36 +292,25 @@ body {
   top: 16px;
   right: 16px;
 }
-.restaurant__card__link__menu__content {
+.restaurant__card__menu__link__content {
   display: flex;
   padding: 8px 16px 16px;
+  position: relative;
 }
-.restaurant__card__link__menu__content__txt {
+.restaurant__card__menu__link__content__txt {
   display: flex;
   flex-direction: column;
   width: 80%;
   gap: 8px;
 }
-.restaurant__card__link__menu__content__txt__title {
+.restaurant__card__menu__link__content__txt__title {
   margin: unset;
   color: #000000;
   font-size: 18px;
 }
-.restaurant__card__link__menu__content__txt__location {
+.restaurant__card__menu__link__content__txt__location {
   margin: unset;
   color: #000000;
   font-weight: 300;
   font-size: 18px;
-}
-.restaurant__card__link__menu__content__icon {
-  width: 20%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.restaurant__card__link__menu__content__icon__button {
-  font-size: 22px;
-  border: none;
-  background-color: #FFFFFF;
-  cursor: pointer;
 }/*# sourceMappingURL=main.css.map */
