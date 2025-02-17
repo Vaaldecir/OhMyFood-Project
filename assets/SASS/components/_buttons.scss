@@ -24,13 +24,27 @@
  
 }
 
-.restaurant__card__menu__icon {
-    width: 20%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    right: 16px;
-    bottom: 40px;
+.restaurant__card__menu__heart {
+        font-size: 24px;
+        position: absolute;
+        right: 40px;
+        bottom: 32px;
+    
+    }
 
+.heart--empty:hover {
+    animation: heart-reverse 500ms forwards;
+}
+
+
+
+.heart--full {
+    background-image: $btn-bg;
+    background-clip: text;
+    color: transparent;
+    animation: heart-reverse 500ms forwards;
+
+    &:hover {
+        animation: heart 500ms forwards;
+    }
 }

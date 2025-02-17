@@ -22,3 +22,22 @@
     }
 }
 
+@keyframes heart-reverse {
+    from { 
+        opacity: 1.0;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes heart {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1.0;
+    }
+}

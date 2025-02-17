@@ -18,6 +18,22 @@
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
   }
 }
+@keyframes heart-reverse {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes heart {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 body {
   display: flex;
   justify-content: center;
@@ -28,7 +44,7 @@ body {
   width: 100%;
   box-sizing: border-box;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1025px) {
   .main-container {
     max-width: 1440px;
   }
@@ -58,7 +74,7 @@ body {
 .button:active {
   animation: button 150ms forwards;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1025px) {
   .button {
     animation: button-reverse 500ms forwards;
   }
@@ -70,14 +86,26 @@ body {
   }
 }
 
-.restaurant__card__menu__icon {
-  width: 20%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.restaurant__card__menu__heart {
+  font-size: 24px;
   position: absolute;
-  right: 16px;
-  bottom: 40px;
+  right: 40px;
+  bottom: 32px;
+}
+
+.heart--empty:hover {
+  animation: heart-reverse 500ms forwards;
+}
+
+.heart--full {
+  background-image: linear-gradient(to top, #9356dc 0%, #ff79da 100%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+  animation: heart-reverse 500ms forwards;
+}
+.heart--full:hover {
+  animation: heart 500ms forwards;
 }
 
 .form {
@@ -92,7 +120,7 @@ body {
 .form--shadow {
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1025px) {
   .form--shadow {
     box-shadow: unset;
   }
@@ -127,7 +155,7 @@ body {
   z-index: 2;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1025px) {
   .header__container {
     padding-bottom: 24px;
     box-shadow: unset;
@@ -144,7 +172,7 @@ body {
     width: 32%;
   }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1025px) {
   .header__container__logo {
     width: 16%;
   }
@@ -159,7 +187,7 @@ body {
   padding: 42px 48px 0;
   font-size: 24px;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1025px) {
   .informations__title {
     font-size: 40px;
     padding-bottom: 16px;
@@ -174,7 +202,7 @@ body {
   padding-top: 32px;
   padding-bottom: 72px;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1025px) {
   .informations__button-container {
     padding-bottom: 48px;
   }
@@ -183,26 +211,37 @@ body {
 .section {
   padding: 48px 24px;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1025px) {
   .section {
     padding: 50px 144px;
   }
 }
 
+@media screen and (min-width: 1025px) {
+  .fonctionnement {
+    padding: 50px 72px;
+  }
+}
 .fonctionnement__btn {
   display: flex;
   flex-direction: column;
   gap: 24px;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   .fonctionnement__btn {
     flex-direction: row;
+    gap: 32px;
     justify-content: center;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .fonctionnement__btn {
     gap: 24px;
   }
 }
 .fonctionnement__btn__container {
-  margin-left: 13px;
+  position: relative;
+  padding: 0 32px;
   display: flex;
   align-items: center;
   gap: 24px;
@@ -219,8 +258,8 @@ body {
   }
 }
 .fonctionnement__btn__container__number {
-  position: relative;
-  left: -15px;
+  position: absolute;
+  left: -16px;
   margin: unset;
   border: 1px solid #9356dc;
   border-radius: 16px;
@@ -233,12 +272,12 @@ body {
 .fonctionnement__btn__container:active > i {
   color: #9356dc;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1025px) {
   .fonctionnement__btn__container:active > i {
     color: #7e7e7e;
   }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1025px) {
   .fonctionnement__btn__container:hover > i {
     color: #9356dc;
   }
@@ -257,10 +296,32 @@ body {
 .restaurant {
   background-color: #F6F6F6;
 }
+.restaurant__card {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+@media screen and (min-width: 768px) {
+  .restaurant__card {
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 32px;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .restaurant__card {
+    gap: 48px;
+  }
+}
 .restaurant__card__menu {
   background-color: #FFFFFF;
   border-radius: 15px;
   position: relative;
+}
+@media screen and (min-width: 768px) {
+  .restaurant__card__menu {
+    width: 47%;
+  }
 }
 .restaurant__card__menu__link {
   text-decoration: none;
