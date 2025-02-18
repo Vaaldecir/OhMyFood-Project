@@ -1,0 +1,54 @@
+.footer {
+    background-color: $secondary-color;
+    padding: 24px 32px;
+
+    @media screen and (min-width:$tablet-breakpoint) 
+    {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: end;
+    }
+
+    @media screen and (min-width:$desktop-breakpoint) {
+        justify-content: end;
+        gap: 48px;
+    }
+        
+
+    &__color {
+        color: $btn-color;
+        margin: unset;
+    }
+
+    &__title {
+        font-family: 'Shrikhand';
+        font-size: 18px;
+        font-weight: 400;
+        padding-bottom: 24px;
+
+        @media screen and (min-width:$tablet-breakpoint)  {
+            padding: unset;
+        }
+    }
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+
+        @media screen and (min-width:$tablet-breakpoint) {
+            flex-direction: row;
+        }
+        &__link {
+            text-decoration: none;
+            font-size: 16px;
+        
+            &__block {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            }
+        }
+    }
+}
