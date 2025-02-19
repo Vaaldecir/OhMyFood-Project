@@ -24,13 +24,19 @@
  
 }
 
-.restaurant__card__menu__heart {
+.restaurant__card__menu__heart,
+.menu__restaurant__heart {
         font-size: 24px;
+        cursor: pointer;
         position: absolute;
-        right: 40px;
-        bottom: 32px;
-    
+
     }
+
+.restaurant__card__menu__heart {
+    right: 40px;
+    bottom: 32px;
+
+}
 
 .heart--empty:hover {
     animation: heart-reverse 500ms forwards;

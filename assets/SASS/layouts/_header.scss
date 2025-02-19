@@ -1,26 +1,55 @@
 //Header Settings
-.header__container {
-    padding-top: 20px;
-    padding-bottom: 16px;
-    position: relative;
-    z-index: 2;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+.header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
 
-    @media screen and (min-width: $desktop-breakpoint) { 
-        padding-bottom: 24px;
-        box-shadow: unset;
-       }
+	&__container {
+		display: flex;
+        align-items: center;
+		width: 100%;
+		position: relative;
+		z-index: 2;
+		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+		padding: 20px 16px 16px;
 
-    &__logo {
-        display:block;
-        margin: 0px auto;
-        width: 40%;
-        height: auto;
-        @media screen and (min-width: $tablet-breakpoint) {
-            width: 32%;
-        }
-        @media screen and (min-width: $desktop-breakpoint) {
-            width: 16%;
-        }
-    }
+		@media screen and (min-width: $desktop-breakpoint) {
+			padding-bottom: 24px;
+			box-shadow: unset;
+		}
+
+		&__link {
+			text-decoration: none;
+
+			&__icon {
+				font-size: 24px;
+				color: $main-color;
+				padding: 0 16px;
+
+                @media screen and (min-width: $tablet-breakpoint) {
+                    font-size: 32px;
+                }
+			}
+		}
+
+		&__bis {
+			width: 100%;
+			display: flex;
+			justify-content: center;
+		}
+
+		&__logo {
+			display: block;
+			// margin: 0px auto;
+			width: 40%;
+			height: auto;
+			@media screen and (min-width: $tablet-breakpoint) {
+				width: 32%;
+			}
+			@media screen and (min-width: $desktop-breakpoint) {
+				width: 16%;
+			}
+		}
+	}
 }
