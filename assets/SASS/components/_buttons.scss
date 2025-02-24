@@ -1,56 +1,51 @@
 .button {
-    font-size: 16px;
-    font-weight: 500;
-    text-decoration: none;
-    color: $btn-color;
-    padding: 16px 24px;
-    background: $btn-bg;
-    border-radius: 25px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
-    animation: button-reverse 150ms forwards;
-    &:active {
-        animation: button 150ms forwards;
-    }
+	font-size: 16px;
+	font-weight: 500;
+	text-decoration: none;
+	color: $btn-color;
+	padding: 16px 24px;
+	background: $btn-bg;
+	border-radius: 25px;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+	animation: button-reverse 150ms forwards;
+	&:active {
+		animation: button 150ms forwards;
+	}
 
-    @media screen and (min-width: $desktop-breakpoint) {
-        animation: button-reverse 500ms forwards;
-        &:active {
-            animation: unset;
-        }
-        &:hover {
-            animation: button 500ms forwards;
-        }
-    }
- 
+	@media screen and (min-width: $desktop-breakpoint) {
+		animation: button-reverse 500ms forwards;
+		&:active {
+			animation: unset;
+		}
+		&:hover {
+			animation: button 500ms forwards;
+		}
+	}
 }
 
 .restaurant__card__menu__heart,
-.menu__restaurant__heart {
-        font-size: 24px;
-        cursor: pointer;
-        position: absolute;
-
-    }
+.menu__restaurant__container__heart {
+	font-size: 24px;
+	cursor: pointer;
+	position: absolute;
+}
 
 .restaurant__card__menu__heart {
-    right: 40px;
-    bottom: 32px;
-
+	right: 40px;
+	bottom: 32px;
 }
 
 .heart--empty:hover {
-    animation: heart-reverse 500ms forwards;
+	animation: heart-reverse 500ms forwards;
 }
 
-
-
 .heart--full {
-    background-image: $btn-bg;
-    background-clip: text;
-    color: transparent;
-    animation: heart-reverse 500ms forwards;
+	background-image: $btn-bg;
+	background-clip: text;
+	color: transparent;
+	animation: heart-reverse 500ms forwards;
 
-    &:hover {
-        animation: heart 500ms forwards;
-    }
+	&:hover {
+		animation: heart 500ms forwards;
+	}
 }
