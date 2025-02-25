@@ -571,6 +571,7 @@ body {
   z-index: 1;
   border-top-left-radius: 40px;
   border-top-right-radius: 40px;
+  padding-bottom: 48px;
 }
 @media screen and (min-width: 1025px) {
   .menu {
@@ -585,7 +586,7 @@ body {
   justify-content: space-around;
   align-items: center;
   gap: 16px;
-  padding: 24px 16px 32px;
+  padding: 24px 16px;
 }
 @media screen and (min-width: 768px) {
   .menu__restaurant {
@@ -610,7 +611,7 @@ body {
   }
 }
 .menu__entree {
-  padding-left: 24px;
+  padding: 0 24px;
 }
 .menu__entree__title {
   font-size: 16px;
@@ -618,4 +619,53 @@ body {
   border-bottom: 3px solid #99E2D0;
   width: 40px;
   padding-bottom: 6px;
+  margin-bottom: 16px;
+}
+.menu__entree__card__article {
+  position: relative;
+  overflow: hidden;
+}
+.menu__entree__card__article__container {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #FFFFFF;
+  background-color: #FFFFFF;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+.menu__entree__card__article__container__txt {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 16px 0 16px 16px;
+}
+.menu__entree__card__article__container__txt__name {
+  font-size: 18px;
+  font-weight: 500;
+}
+.menu__entree__card__article__container__txt__description {
+  font-size: 15px;
+  font-weight: 300;
+}
+.menu__entree__card__article__container__price {
+  display: flex;
+  align-items: flex-end;
+  padding: 0 16px 16px 0;
+  font-size: 15px;
+  font-weight: 700;
+}
+.menu__entree__card__article__check {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: -64px;
+  top: 0;
+  font-size: 20px;
+  color: #FFFFFF;
+  background-color: #99E2D0;
+  width: 64px;
+  height: 79px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
 }/*# sourceMappingURL=main.css.map */
