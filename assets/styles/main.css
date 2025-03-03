@@ -67,6 +67,62 @@
     opacity: 1;
   }
 }
+@keyframes go-left {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 86%;
+  }
+}
+@keyframes go-right {
+  from {
+    width: 86%;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes go-left-tablet {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 88%;
+  }
+}
+@keyframes go-right-tablet {
+  from {
+    width: 88%;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes check-left {
+  from {
+    right: -64px;
+  }
+  to {
+    right: 0;
+  }
+}
+@keyframes check-right {
+  from {
+    right: 0;
+  }
+  to {
+    right: -64px;
+  }
+}
+@keyframes menu {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 * {
   margin: unset;
   padding: unset;
@@ -122,6 +178,10 @@ body {
   .button:hover {
     animation: button 500ms forwards;
   }
+}
+
+.command__button {
+  padding: 16px 48px;
 }
 
 .restaurant__card__menu__heart,
@@ -610,51 +670,91 @@ body {
     width: 10%;
   }
 }
-.menu__entree {
-  padding: 0 24px;
+.menu__section {
+  padding: 0 24px 40px;
 }
-.menu__entree__title {
+@media screen and (min-width: 768px) {
+  .menu__section {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.menu__section__title {
   font-size: 16px;
   font-weight: 300;
   border-bottom: 3px solid #99E2D0;
   width: 40px;
   padding-bottom: 6px;
   margin-bottom: 16px;
+  opacity: 0;
 }
-.menu__entree__card__article {
+@media screen and (min-width: 768px) {
+  .menu__section__title {
+    margin-left: 140px;
+  }
+}
+.menu__section__card {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+@media screen and (min-width: 768px) {
+  .menu__section__card {
+    align-items: center;
+  }
+}
+.menu__section__card__article {
   position: relative;
   overflow: hidden;
-}
-.menu__entree__card__article__container {
-  display: flex;
-  justify-content: space-between;
-  border: 1px solid #FFFFFF;
   background-color: #FFFFFF;
   border-radius: 15px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  opacity: 0;
 }
-.menu__entree__card__article__container__txt {
+@media screen and (min-width: 768px) {
+  .menu__section__card__article {
+    width: 65%;
+  }
+}
+.menu__section__card__article__container {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #FFFFFF;
+  animation: go-right 1s forwards;
+}
+@media screen and (min-width: 768px) {
+  .menu__section__card__article__container {
+    animation: go-right-tablet 1s forwards;
+  }
+}
+.menu__section__card__article__container__txt {
   display: flex;
   flex-direction: column;
   gap: 5px;
   padding: 16px 0 16px 16px;
+  white-space: nowrap;
+  overflow: hidden;
 }
-.menu__entree__card__article__container__txt__name {
+.menu__section__card__article__container__txt__name {
   font-size: 18px;
   font-weight: 500;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
-.menu__entree__card__article__container__txt__description {
+.menu__section__card__article__container__txt__description {
   font-size: 15px;
   font-weight: 300;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
-.menu__entree__card__article__container__price {
+.menu__section__card__article__container__price {
   display: flex;
   align-items: flex-end;
   padding: 0 16px 16px 0;
   font-size: 15px;
   font-weight: 700;
 }
-.menu__entree__card__article__check {
+.menu__section__card__article__check {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -668,4 +768,75 @@ body {
   height: 79px;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
+  animation: check-right 1s forwards;
+}
+.menu__btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+.menu__section__card__article:hover > .menu__section__card__article__container {
+  animation: go-left 500ms forwards;
+}
+@media screen and (min-width: 768px) {
+  .menu__section__card__article:hover > .menu__section__card__article__container {
+    animation: go-left-tablet 500ms forwards;
+  }
+}
+
+.menu__section__card__article:hover > .menu__section__card__article__check {
+  animation: check-left 500ms forwards;
+}
+
+.one {
+  animation: menu 500ms forwards;
+}
+
+.two {
+  animation: menu 500ms forwards 250ms;
+}
+
+.three {
+  animation: menu 500ms forwards 500ms;
+}
+
+.four {
+  animation: menu 500ms forwards 750ms;
+}
+
+.five {
+  animation: menu 500ms forwards 1s;
+}
+
+.six {
+  animation: menu 500ms forwards 1.25s;
+}
+
+.seven {
+  animation: menu 500ms forwards 1.5s;
+}
+
+.eight {
+  animation: menu 500ms forwards 1.75s;
+}
+
+.nine {
+  animation: menu 500ms forwards 2s;
+}
+
+.ten {
+  animation: menu 500ms forwards 2.25s;
+}
+
+.eleven {
+  animation: menu 500ms forwards 2.5s;
+}
+
+.twelve {
+  animation: menu 500ms forwards 2.75s;
+}
+
+.thirteen {
+  animation: menu 500ms forwards 3s;
 }/*# sourceMappingURL=main.css.map */

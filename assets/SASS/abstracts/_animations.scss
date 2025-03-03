@@ -77,3 +77,73 @@
         opacity: 1.0;
     }
 }
+
+@keyframes go-left {
+    from {
+        width: 100%;
+    }
+
+    to {
+        width: 86%;
+    }
+}
+
+@keyframes go-right {
+    from {
+        width: 86%;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes go-left-tablet {
+    from {
+        width: 100%;
+    }
+
+    to {
+        width: 88%;
+    }
+}
+
+@keyframes go-right-tablet {
+    from {
+        width: 88%;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes check-left {
+    from {
+        right: -64px;
+    }
+
+    to {
+        right: 0;
+    }
+}
+
+@keyframes check-right {
+    from {
+        right: 0;
+    }
+
+    to {
+        right: -64px;
+    }
+}
+
+@keyframes menu {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}

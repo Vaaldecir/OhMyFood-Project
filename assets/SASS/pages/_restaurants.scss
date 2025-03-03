@@ -50,8 +50,13 @@
 		}
 	}
 
-	&__entree {
-		padding: 0 24px;
+	&__section {
+		padding: 0 24px 40px;
+
+		@media screen and (min-width: $tablet-breakpoint) {
+			display: flex;
+			flex-direction: column;	
+		}
 
 		&__title {
 			font-size: 16px;
@@ -60,61 +65,171 @@
 			width: 40px;
 			padding-bottom: 6px;
 			margin-bottom: 16px;
+			opacity: 0;
+
+
+			@media screen and (min-width: $tablet-breakpoint) {
+				margin-left: 140px;
+			}
 		}
 
-		&__card__article {
-			position: relative;
-			overflow: hidden;
+		&__card {
+			display: flex;
+			flex-direction: column;
+			gap: 16px;
 
-			&__container {
-				display: flex;
-				justify-content: space-between;
-				border: 1px solid $btn-color;
+			@media screen and (min-width: $tablet-breakpoint) {
+				align-items: center;
+
+			}
+			&__article {
+				position: relative;
+				overflow: hidden;
 				background-color: $btn-color;
 				border-radius: 15px;
 				box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+				opacity: 0;
 
-				&__txt {
+
+				@media screen and (min-width: $tablet-breakpoint) {
+					width: 65%;
+				}
+
+				&__container {
 					display: flex;
-					flex-direction: column;
-					gap: 5px;
-					padding: 16px 0 16px 16px;
+					justify-content: space-between;
+					border: 1px solid $btn-color;
+					animation: go-right 1s forwards;
 
-					&__name {
-						font-size: 18px;
-						font-weight: 500;
+					@media screen and (min-width: $tablet-breakpoint) {
+						animation: go-right-tablet 1s forwards;
 					}
 
-					&__description {
+					&__txt {
+						display: flex;
+						flex-direction: column;
+						gap: 5px;
+						padding: 16px 0 16px 16px;
+						white-space: nowrap;
+						overflow: hidden;
+
+
+						&__name {
+							font-size: 18px;
+							font-weight: 500;
+							overflow: hidden;
+							text-overflow: ellipsis;
+	
+						}
+
+						&__description {
+							font-size: 15px;
+							font-weight: 300;
+							overflow: hidden;
+							text-overflow: ellipsis;
+	
+						}
+					}
+
+					&__price {
+						display: flex;
+						align-items: flex-end;
+						padding: 0 16px 16px 0;
 						font-size: 15px;
-						font-weight: 300;
+						font-weight: 700;
 					}
 				}
 
-				&__price {
+				&__check {
 					display: flex;
-					align-items: flex-end;
-					padding: 0 16px 16px 0;
-					font-size: 15px;
-					font-weight: 700;
+					justify-content: center;
+					align-items: center;
+					position: absolute;
+					right: -64px;
+					top: 0;
+					font-size: 20px;
+					color: $btn-color;
+					background-color: $new-bg-color;
+					width: 64px;
+					height: 79px;
+					border-top-right-radius: 15px;
+					border-bottom-right-radius: 15px;
+					animation: check-right 1s forwards;
 				}
-			}
-
-			&__check {
-				display: flex;
-				justify-content: center;
-				align-items: center;
-				position: absolute;
-				right: -64px;
-				top: 0;
-				font-size: 20px;
-				color: $btn-color;
-				background-color: $new-bg-color;
-				width: 64px;
-				height: 79px;
-				border-top-right-radius: 15px;
-				border-bottom-right-radius: 15px;
 			}
 		}
 	}
+
+	&__btn {
+		display: flex;
+		justify-content: center;
+		margin-top: 16px;
+	}
+}
+
+.menu__section__card__article:hover > .menu__section__card__article__container {
+	animation: go-left 500ms forwards;
+
+	@media screen and (min-width: $tablet-breakpoint) {
+		animation: go-left-tablet 500ms forwards;
+		
+	}
+}
+
+.menu__section__card__article:hover > .menu__section__card__article__check {
+	animation: check-left 500ms forwards;
+}
+
+.one {
+	animation: menu 500ms forwards;
+}
+
+.two {
+	animation: menu 500ms forwards 250ms;
+}
+
+.three {
+	animation: menu 500ms forwards 500ms;
+
+}
+
+.four {
+	animation: menu 500ms forwards 750ms;
+
+}
+
+.five {
+	animation: menu 500ms forwards 1s;
+}
+
+.six {
+	animation: menu 500ms forwards 1.25s;
+}
+
+.seven {
+	animation: menu 500ms forwards 1.5s;
+}
+
+.eight {
+	animation: menu 500ms forwards 1.75s;
+}
+
+.nine {
+	animation: menu 500ms forwards 2s;
+}
+
+.ten {
+	animation: menu 500ms forwards 2.25s;
+}
+
+.eleven {
+	animation: menu 500ms forwards 2.5s;
+}
+
+.twelve {
+	animation: menu 500ms forwards 2.75s;
+}
+
+.thirteen {
+	animation: menu 500ms forwards 3s;
 }
