@@ -487,8 +487,6 @@ body {
   align-items: center;
   gap: 24px;
   background-color: #F6F6F6;
-  border: 1px solid;
-  border-color: #F6F6F6;
   border-radius: 20px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
 }
