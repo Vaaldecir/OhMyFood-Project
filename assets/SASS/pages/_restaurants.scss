@@ -68,7 +68,7 @@
 			opacity: 0;
 
 
-			@media screen and (min-width: $tablet-breakpoint) {
+			@media screen and (min-width: $desktop-breakpoint) {
 				margin-left: 168px;
 			}
 		}
@@ -78,7 +78,7 @@
 			flex-direction: column;
 			gap: 16px;
 
-			@media screen and (min-width: $tablet-breakpoint) {
+			@media screen and (min-width: $desktop-breakpoint) {
 				align-items: center;
 
 			}
@@ -91,7 +91,7 @@
 				opacity: 0;
 
 
-				@media screen and (min-width: $tablet-breakpoint) {
+				@media screen and (min-width: $desktop-breakpoint) {
 					width: 65%;
 				}
 
