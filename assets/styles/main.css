@@ -472,7 +472,7 @@ body {
   .fonctionnement__btn {
     flex-direction: row;
     gap: 32px;
-    justify-content: center;
+    justify-content: space-evenly;
   }
 }
 @media screen and (min-width: 1025px) {
@@ -634,6 +634,9 @@ body {
 }
 @media screen and (min-width: 1025px) {
   .menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 70%;
     margin-left: auto;
     margin-right: auto;
@@ -649,7 +652,7 @@ body {
 }
 @media screen and (min-width: 768px) {
   .menu__restaurant {
-    justify-content: center;
+    width: 43%;
   }
 }
 .menu__restaurant__name {
@@ -666,16 +669,17 @@ body {
 }
 @media screen and (min-width: 768px) {
   .menu__restaurant__container {
-    width: 10%;
+    width: 8%;
   }
 }
 .menu__section {
   padding: 0 24px 40px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1025px) {
   .menu__section {
     display: flex;
     flex-direction: column;
+    width: 65%;
   }
 }
 .menu__section__title {
@@ -687,20 +691,10 @@ body {
   margin-bottom: 16px;
   opacity: 0;
 }
-@media screen and (min-width: 1025px) {
-  .menu__section__title {
-    margin-left: 168px;
-  }
-}
 .menu__section__card {
   display: flex;
   flex-direction: column;
   gap: 16px;
-}
-@media screen and (min-width: 1025px) {
-  .menu__section__card {
-    align-items: center;
-  }
 }
 .menu__section__card__article {
   position: relative;
@@ -712,7 +706,7 @@ body {
 }
 @media screen and (min-width: 1025px) {
   .menu__section__card__article {
-    width: 65%;
+    width: 100%;
   }
 }
 .menu__section__card__article__container {

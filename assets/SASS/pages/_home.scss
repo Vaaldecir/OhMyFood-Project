@@ -47,7 +47,7 @@
 		@media screen and (min-width: $tablet-breakpoint) {
 			flex-direction: row;
 			gap: 32px;
-			justify-content: center;
+			justify-content: space-evenly;
         }
 
 		@media screen and (min-width: $desktop-breakpoint) {
