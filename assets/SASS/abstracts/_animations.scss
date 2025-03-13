@@ -1,3 +1,4 @@
+// animation loader
 @keyframes eggRst {
 	0%,
 	100% {
@@ -34,6 +35,7 @@
     }
 }
 
+// animation bouton + effet retour
 @keyframes button {
     from {
         opacity: 1.0;
@@ -58,6 +60,7 @@
     }
 }
 
+// animation du coeur + effet retour
 @keyframes heart-reverse {
     from { 
         opacity: 1.0;
@@ -78,6 +81,7 @@
     }
 }
 
+//animation check + effet retour
 @keyframes go-left {
     from {
         width: 100%;
@@ -138,6 +142,7 @@
     }
 }
 
+//apparition des menus
 @keyframes menu {
     from {
         opacity: 0;
